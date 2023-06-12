@@ -5,11 +5,12 @@ from next_logistic.next_logistic_app.models import Employee
 
 
 def get_employees(request):
-    url = 'https://hub.dummyapis.com/employee?noofRecords=100&idStarts=1001'
+    url = 'https://hub.dummyapis.com/employee?noofRecords=20&idStarts=1001'
     response = requests.get(url)
     data = response.json()
 
     for i in data:
+        print(i)
         employee_data = Employee(
             firstName=i['firstName'],
             lastName=i['lastName'],

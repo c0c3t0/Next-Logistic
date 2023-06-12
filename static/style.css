@@ -1,0 +1,10 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
